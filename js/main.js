@@ -29,8 +29,7 @@ function addTask() {
     } else {
         alert("Task name not unique - please try again");
     }
-
-
+    getEle("newTask").value = "";
 }
 function deleteTask(id) {
     taskList.removeTask(id);
